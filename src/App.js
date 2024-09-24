@@ -41,14 +41,14 @@ function App() {
           <ToDoCard key={i} task={task} category={category} deleteItem={deleteItem} index={i} />
           )})}
 
-        {
+        {/* {
           todolist.length === 0 ?
 
             <p style={{ textAlign: "center", fontSize: "20px" }}>
               No tasks to show , please add new tasks
             </p>
             : null
-        }
+        } */}
 
       </div>
       <div className="input-container">
@@ -89,7 +89,7 @@ function App() {
             setNewTask("");
             setCategory("");
             toast.success('Task added successfully')
-          }}> Add
+          }}> Add List
         </button>
       </div>
       <Toaster />
